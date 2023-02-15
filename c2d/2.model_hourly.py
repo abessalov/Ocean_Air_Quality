@@ -10,11 +10,13 @@ from datetime import timedelta
 import numpy as np
 import pandas as pd
 
-# install packages
-subprocess.check_call([sys.executable, "-m", "pip", "install", "--upgrade", "pip"])
-for package in ['pandas','numpy','xgboost'][2:]:
-    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+# # install packages
+# subprocess.check_call([sys.executable, "-m", "pip", "install", "--upgrade", "pip"])
+# subprocess.check_call([sys.executable, "-m", "pip", "install", "xgboost"])
+# there is an error here - to execute on the image with xgboost installed 
+
 import xgboost as xgb
+
 
 def get_input():
     '''
