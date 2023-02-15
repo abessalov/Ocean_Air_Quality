@@ -7,14 +7,17 @@ from datetime import datetime as dt
 from datetime import timedelta
 # import matplotlib.pyplot as plt
 
-import numpy as np
-import pandas as pd
 
-# # install packages
-# subprocess.check_call([sys.executable, "-m", "pip", "install", "--upgrade", "pip"])
-# subprocess.check_call([sys.executable, "-m", "pip", "install", "xgboost"])
+
+# install packages
+subprocess.check_call([sys.executable, "-m", "pip", "install", "--upgrade", "pip"])
+subprocess.check_call([sys.executable, "-m", "pip", "install", "numpy"])
+subprocess.check_call([sys.executable, "-m", "pip", "install", "pandas"])
+subprocess.check_call([sys.executable, "-m", "pip", "install", "xgboost"])
 # there is an error here - to execute on the image with xgboost installed 
 
+import numpy as np
+import pandas as pd
 import xgboost as xgb
 
 
